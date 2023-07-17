@@ -26,7 +26,8 @@
           <a class="logo link" href="./index.html">
             Web<span class="logotope">Studio</span></a
           >
-          <ul class="list header-ul">
+
+          <ul class="list header-ul menu-ul">
             <li>
               <a class="onelinks link active" href="./index.html">Studio</a>
             </li>
@@ -50,6 +51,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-Vector-line"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -523,6 +533,75 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <!-- Mobail menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+
+      <ul class="list mobile-menu">
+        <li class="menu-li">
+          <a class="onelinks link active" href="./index.html">Studio</a>
+        </li>
+        <li>
+          <a class="onelinks link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="onelinks link" href="">Contacts</a></li>
+      </ul>
+      <ul class="list menu-contact">
+        <li>
+          <a class="menu-contacts-adress link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="menu-meil link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="list social-network-menu">
+        <li class="social-li">
+          <a href="" class="social-fo" aria-label="instagram"
+            ><svg class="network" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-li">
+          <a href="" class="social-fo" aria-label="twitter"
+            ><svg class="network" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-li">
+          <a href="" class="social-fo" aria-label="facebook"
+            ><svg class="network" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-li">
+          <a href="" class="social-fo" aria-label="linkedin"
+            ><svg class="network" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobail-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
