@@ -208,6 +208,18 @@ div {
   text-align: center;
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .firstpage {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobail/Dark-bgmoba@2x.jpg);
+  }
+}
 @media only screen and (min-width: 1158px) {
   .firstpage {
     padding-top: 188px;
@@ -379,7 +391,7 @@ div {
 }
 .text {
   font-size: 16px;
-  font-weight: 500;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-slate-color);
@@ -1014,6 +1026,11 @@ div {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .div-footer {
+    flex-wrap: nowrap;
   }
 }
 .portfolio-window {
