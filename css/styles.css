@@ -513,7 +513,7 @@ div {
   background-color: var(--primary-navy-color);
   /* padding-top: 100px;
   padding-bottom: 100px; */
-  display: flex;
+
   align-items: center;
   margin-top: auto;
   margin-right: auto;
@@ -1081,6 +1081,12 @@ div {
   padding-right: 24px;
   padding-bottom: 24px;
 }
+@media screen and (max-width: 427.8px) {
+  .modal {
+    max-width: 90%;
+  }
+}
+
 .mogal-icon {
   stroke: var(--primary-navy-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1221,10 +1227,20 @@ div {
   margin-bottom: 16px;
   color: var(--primary-white-color);
 }
-.form-fooret {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+@media only screen and (max-width: 768px) {
+  .form-fooret {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .form-fooret {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .form-fooret {
@@ -1250,9 +1266,9 @@ div {
   line-height: 1.5;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-@media only screen and (min-width: 428px) and (max-width: 767.98px) {
+@media only screen (max-width: 428px) {
   .form-input-email {
-    width: 264px;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1260,12 +1276,17 @@ div {
     width: 264px;
   }
 }
-.form-lable {
+.form-email {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .form-lable {
+  .form-email {
     width: 264px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .form-email {
+    flex-wrap: nowrap;
   }
 }
 
@@ -1359,7 +1380,8 @@ div {
 
   padding: 16px 32px;
   margin-top: 24px;
-  margin-left: 95px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Mobail-menu */
 .menu-toggle {
@@ -1460,6 +1482,11 @@ div {
   line-height: 1.1;
   letter-spacing: 0.72px;
 }
+@media screen and (max-width: 427.8px) {
+  .menu-contacts-adress {
+    font-size: 24px;
+  }
+}
 .menu-meil {
   color: var(--primary-slate-color);
 
@@ -1469,10 +1496,14 @@ div {
   line-height: 1.2; /* 120% */
   letter-spacing: 0.4px;
 }
+
 .social-network-menu {
   list-style: none;
   display: flex;
-  align-items: center;
-
   gap: 56px;
+}
+@media screen and (max-width: 427.8px) {
+  .social-network-menu {
+    gap: 28px;
+  }
 }
